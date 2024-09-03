@@ -8,8 +8,7 @@ export default {
         main: '#1E2126',
       },
       fontFamily: {
-        DM: ['DM-Sans', 'sans-serif'],
-        Noto: ['noto-sans-sc', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
       },
     },
   },
