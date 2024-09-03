@@ -26,14 +26,15 @@ import HowCard from '../components/HowCard.astro';
       </nav>
 
       <article class="lg:w-7/12">
-        <h1 class="text-[38px]/[38px] md:text-[48px]/[40px] lg:text-[68px]/[68px] xl:text-[98px]/[100px] 2xl:text-[108px]/[112px] font-bold">Lorem ipsum dolor si adipisicing elit.</h1>
+        <h1 class="text-[38px]/[38px] md:text-[48px]/[40px] lg:text-[68px]/[68px] xl:text-[98px]/[100px] 2xl:text-[108px]/[112px] font-bold">PRESTIGE SLOT ARENA</h1>
+        <p class="font-extralight text-[22px]/[24px] md:text-[28px]/[32px] lg:text-[36px]/[38px] xl:text-[44px]/[46px]">Discover the most fascinating casino events right here!</p>
       </article>
 
       <article class="w-full flex justify-center bg-red-500 lg:w-6/12">
         <button
           class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[16px]/[19px] md:text-[26px]/[28px] lg:text-[38px]/[38px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-14"
         >
-          CALL TO ACTION
+          Get Your Tickets!
         </button>
       </article>
     </HeroStructure>
@@ -45,14 +46,22 @@ import HowCard from '../components/HowCard.astro';
       <div class="flex flex-col gap-5 lg:flex-row lg:items-center">
         <div class="flex flex-col gap-5 lg:w-[49%] justify-center lg:rounded-xl lg:border-[2px] lg:border-red lg:p-3 h-full">
           <p class="text-[14px]/[17px] md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut consequat lacus. Donec posuere et erat id posuere. Fusce quis iaculis ex. Integer auctor feugiat lorem ac vulputate. Nunc
-            quis bibendum felis. Duis ut sem id mauris cursus tempor et vehicula nunc. Integer vitae odio vestibulum justo pulvinar dignissim.
+            At Prestige Slot Arena our speciality is to offer you the most thrilling upcoming casino events. These are guaranteed to deliver all the excitement and entertainment with an exclusive
+            touch of glamour.
           </p>
 
           <p class="text-[14px]/[17px] md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut consequat lacus. Donec posuere et erat id posuere. Fusce quis iaculis ex. Integer auctor feugiat lorem ac vulputate. Nunc
-            quis bibendum felis. Duis ut sem id mauris cursus tempor et vehicula nunc. Integer vitae odio vestibulum justo pulvinar dignissim.
+            Founded by the most experienced and dedicated professionals in the entertainment and event-planning industry, Prestige Slot Arena’s goal is to create fun, safe and responsibly managed
+            events. Sign up and indulge into the fever and style of casino entertainment. Explore our upcoming events and book your tickets right away for an unforgettable experience!
           </p>
+
+          <article class="w-full flex justify-center bg-red-500 lg:w-6/12">
+            <button
+              class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[15px]/[16px] md:text-[18px]/[20px] lg:text-[20px]/[22px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-8"
+            >
+              Get VIP Tickets Here!
+            </button>
+          </article>
         </div>
 
         <div class="h-[220px] md:h-[480px] lg:w-[49%]">
@@ -69,13 +78,72 @@ import HowCard from '../components/HowCard.astro';
         <!-- Swiper -->
         <div id="faq-swiper" class="swiper w-full">
           <div class="swiper-wrapper relative w-max">
-            <FaqCard />
-            <FaqCard />
-            <FaqCard />
-            <FaqCard />
+            <FaqCard
+              title="What is our service?"
+              description=`Prestige Slot Arena is your ultimate source of the hottest casino event tickets.  Our speciality is providing tickets to a large variety of thrilling casino events, ensuring you have access to the best available casino tournaments.
+Our committed call center staff will assist you to lock down and get you tickets to the casino events of your choice with ease`
+              .
+            />
+            <FaqCard title="How does the step-by-step process work?">
+              <ol>
+                <li>
+                  <span class="font-bold">Explore events.</span> Browse and choose from our most complete list of upcoming casino events.
+                </li>
+                <li>
+                  <span class="font-bold">Share us your details.</span> out the form with your contact information.
+                </li>
+                <li>
+                  <span class="font-bold">Staff callback.</span> An expert agent from our call center will contact you to custom your needs and assist you with available options.
+                </li>
+                <li>
+                  <span class="font-bold">Lock down your tickets.</span> Once you have a preferred event, our agent will help you secure your tickets and complete your order.
+                </li>
+
+                <li>
+                  <span class="font-bold">Have fun!</span> Get your tickets and prepare to enjoy an exciting casino event.
+                </li>
+              </ol></FaqCard
+            >
+
+            <FaqCard
+              title="Who are our partners?"
+              description=`In order to offer you exclusive access to a wide range of exclusive events, some of the top casinos and tournament organizers across the gambling industry have partnered with Prestige Slot Arena.  Ensuring our customers get only the best possible experiences and options.`
+            />
+
+            <FaqCard title="What payment methods do we take?">
+              <p>
+                <span class="font-bold">Prestige Slot Arena</span>
+                accepts a wide range of payment methods, such as: Major debit and credit cards (Visa, MasterCard, American Express)
+                <br />
+                Bank transfers
+                <br />
+                PayPal
+                <br />
+                And more!
+              </p>
+            </FaqCard>
+
+            <FaqCard title="How does our refund policy work?">
+              <p>
+                We encourage you to read our refund policy in case that is what you need: Cancellations requested over 30 days prior to the event will receive a full refund. Cancellations made between
+                14-30 days before the event will receive a 50% refund. Cancellations requested less than 14 days prior to the event are non-refundable.
+                <br />
+                <br />
+                Upon cancellation request, refunds will be processed within the next 7 to 10 business days. For more questions and concerns about our refund policy, please contact our customer service
+                team to assist you.
+              </p>
+            </FaqCard>
           </div>
           <div class="swiper-pagination relative mt-10"></div>
         </div>
+      </article>
+
+      <article class="w-full flex justify-center bg-red-500">
+        <button
+          class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[15px]/[16px] md:text-[18px]/[20px] lg:text-[20px]/[22px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-8"
+        >
+          Get VIP Tickets Here!
+        </button>
       </article>
     </SectionStructure>
 
