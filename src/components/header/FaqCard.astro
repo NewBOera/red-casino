@@ -1,0 +1,22 @@
+---
+// Props recibidas por el componente
+const {
+  title = 'Lorem Ipsum?',
+  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut consequat lacus. Donec posuere et erat id posuere. Fusce quis iaculis ex. Integer auctor feugiat lorem ac vulputate. Nunc quis bibendum felis. Duis ut sem id mauris cursus tempor et vehicula nunc. Integer vitae odio vestibulum justo pulvinar dignissim.',
+  imageSrc = '/public/assets/tournaments/dice.png',
+  bgColor = '#F30C36',
+  textColor = 'white',
+} = Astro.props;
+---
+
+<div class={`text-${textColor} flex flex-col gap-5 rounded-xl swiper-slide`} style={`background-color: ${bgColor}; padding: 1rem;`}>
+  <h3 class="font-bold text-3xl">{title}</h3>
+  <p class="text-[15px]/[18px]">{description}</p>
+  <div class="flex items-center gap-3">
+    <span class="h-[3px] w-[33%] bg-white"></span>
+    <div class="w-[33%] flex justify-center">
+      <img src={imageSrc} alt="" />
+    </div>
+    <span class="h-[3px] w-[33%] bg-white"></span>
+  </div>
+</div>
