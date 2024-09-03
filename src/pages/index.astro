@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+import HeroStructure from '../components/HeroStructure.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12">
+    <!-- ? Home section -->
+    <HeroStructure idSection="test" wrapperClasses="lg:flex-row">
+      <article class="flex flex-col gap-4 lg:w-7/12 lg:gap-8 lg:justify-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl relative z-20">Titulo</h1>
+        </div>
+
+        <p class="lg:text-lg"></p>
+
+        <div class="flex lg:justify-end">
+          <a href="#about-section">
+            <button class="border-2 border-purplePrimary font-semibold rounded-lg py-3 px-10 hover:scale-95 transition-all duration-200"></button>
+          </a>
+        </div>
+      </article>
+
+      <article class="lg:w-5/12 flex justify-center items-center h-full">
+        <div class="gradient rounded-2xl px-5 py-10">
+          <img
+            class="w-[200px] sm:w-[400px] lg:w-[350px] xl:w-[400px] 2xl:w-[500px] lg:h-[300px] object-contain shadow-hero-image"
+            src="https://static.wikia.nocookie.net/14885b3d-bf25-46c5-aa34-aecad8636a05"
+            alt=""
+          />
+        </div>
+      </article>
+    </HeroStructure>
+
+    <SectionStructure idSection="test" wrapperClasses="lg:flex-row">
+      <article class="flex flex-col gap-4 lg:w-7/12 lg:gap-8 lg:justify-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl relative z-20">Titulo</h1>
+        </div>
+
+        <p class="lg:text-lg"></p>
+
+        <div class="flex lg:justify-end">
+          <a href="#about-section">
+            <button class="border-2 border-purplePrimary font-semibold rounded-lg py-3 px-10 hover:scale-95 transition-all duration-200"></button>
+          </a>
+        </div>
+      </article>
+
+      <article class="lg:w-5/12 flex justify-center items-center h-full">
+        <div class="gradient rounded-2xl px-5 py-10">
+          <img
+            class="w-[200px] sm:w-[400px] lg:w-[350px] xl:w-[400px] 2xl:w-[500px] lg:h-[300px] object-contain shadow-hero-image"
+            src="https://static.wikia.nocookie.net/14885b3d-bf25-46c5-aa34-aecad8636a05"
+            alt=""
+          />
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+
+  <!-- ! Modals -->
+  <!-- ? Age Verification Modal -->
+  <section id="age-verification-modal" class="bg-[#00000000] flex items-center justify-center min-h-screen absolute z-50 hidden">
+    <div class="fixed inset-0 w-full bg-[#000000BB] flex items-center justify-center max-h-screen">
+      <div class="background-image background-age-verification shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md">
+        <article class="flex flex-col items-center justify-center py-16 px-10 gap-10 text-white">
+          <h3 class="text-[26px]/[22px] md:text-[36px]/[38px] lg:text-[44px]/[44px] font-extrabold">Age verification</h3>
+          <p class="text-[18px]/[20px] md:text-[22px]/[22px] lg:text-[24px]/[27px] text-center">Please confirm your age before accessing this content. Are you over 18 years old?</p>
+
+          <div class="flex gap-10">
+            <button class="bg-[#147351] py-4 px-10" onclick="acceptCookies()">Yes</button>
+
+            <button class="bg-[#CA1D1D] py-4 px-10" onclick="rejectCookies()">No</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  textarea {
+    resize: none !important;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+</style>

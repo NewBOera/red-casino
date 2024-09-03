@@ -1,0 +1,101 @@
+---
+interface Props {
+  isLanding: boolean;
+}
+
+const { isLanding } = Astro.props;
+---
+
+<header class="flex justify-center md:hidden fixed z-50 w-screen bg-gray-400 shadow-md">
+  <nav class="flex w-full px-3 sm:px-6 sm:w-[640px] md:w-[768px] justify-between h-[80px]">
+    <div class="text-lg flex gap-4 items-center">
+      <a href="#home-section">
+        <img class="object-contain w-8" src="./assets/icons/icon.png" alt="Logo" title="Slots Volindo" />
+      </a>
+      <!-- <span class="font-semibold"></span> -->
+    </div>
+    <img
+      onclick="toggleMenu()"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNNCA2aDE2TTQgMTJoMTZNNCAxOGgxNiIvPjwvc3ZnPg=="
+      alt="Menu Icon"
+      class="menu-icon"
+      id="menu-icon"
+    />
+  </nav>
+  <div class="menu-container bg-main shadow-lg border-b-[1px] border-[#FFFFFF22]" id="menu-container">
+    <div class="flex justify-between items-center p-5">
+      <img onclick="toggleMenu()" src="./assets/icons/icon.png" alt="Menu Icon" class="menu-icon absolute top-[1rem] left-[1rem]" id="menu-icon" />
+
+      <button onclick="toggleMenu()" class="close-btn" id="close-btn">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJtMy41IDIuMDg2bDQuNSA0LjVsNC41LTQuNUwxMy45MTQgMy41TDkuNDE0IDhsNC41IDQuNWwtMS40MTQgMS40MTRsLTQuNS00LjVsLTQuNSA0LjVMMi4wODYgMTIuNWw0LjUtNC41bC00LjUtNC41eiIvPjwvc3ZnPg=="
+          alt="Close icon"
+        />
+      </button>
+    </div>
+    <ul class="text-blackPrimary font-medium text-green text-[20px]">
+      <li onclick="toggleMenu()"><a href={isLanding ? '#home' : 'home.html'}>Home</a></li>
+      <li onclick="toggleMenu()"><a href={isLanding ? '#home' : 'faq.html'}>F.A.Q.</a></li>
+      <li onclick="toggleMenu()"><a href={isLanding ? '#home' : 'about.html'}>About us</a></li>
+      <li onclick="toggleMenu()"><a href={isLanding ? '#home' : 'contact.html'}>Contact</a></li>
+      <li onclick="toggleMenu()"><a href={isLanding ? '#home' : 'subscription.html'}>Subscription</a></li>
+      <li onclick="toggleMenu()"><a href={isLanding ? '#home' : 'hotels.html'}>Hotels</a></li>
+    </ul>
+  </div>
+</header>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  .menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-container li {
+    padding: 1rem;
+    border-bottom: 1px solid #555;
+  }
+
+  .menu-container li:last-child {
+    border-bottom: none;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .show {
+    display: block;
+  }
+</style>
