@@ -8,30 +8,28 @@ import HowCard from '../components/HowCard.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12">
-    <!-- ! Home section -->
-    <HeroStructure idSection="home" wrapperClasses="text-white font-Inter justify-center items-center lg:gap-20 xl:gap-32 py-32">
-      <div class="relative top-20 bg-green-500">
-        <nav id="side-menu" class="fixed top-0 left-0 w-64 h-full bg-gray-800 mt-16 text-white transform -translate-x-full transition-transform duration-300 ease-in-out">
-          <button id="menu-toggle" class="bg-red p-3 rounded-lg fixed -right-12 z-50">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-          <ul class="flex flex-col space-y-2 p-4">
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">About Us</a></li>
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">F.A.Q.</a></li>
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Tournaments</a></li>
-          </ul>
-        </nav>
-      </div>
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <!-- ? Home section -->
+    <HeroStructure idSection="home" wrapperClasses="text-white font-Inter justify-center lg:items-start xl:justify-end items-center lg:gap-20 xl:gap-32 py-32">
+      <nav id="side-menu" class="fixed top-0 left-0 w-64 h-full bg-gray-800 mt-16 md:mt-[74px] text-white transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <button id="menu-toggle" class="bg-red p-3 rounded-lg fixed -right-12 z-50 lg:hidden">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="flex flex-col space-y-2 p-4">
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">About Us</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">F.A.Q.</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Tournaments</a></li>
+        </ul>
+      </nav>
 
       <article class="lg:w-7/12">
-        <h1 class="text-[38px]/[38px] md:text-[48px]/[40px] lg:text-[68px]/[68px] xl:text-[88px]/[94px] font-bold">Lorem ipsum dolor si adipisicing elit.</h1>
+        <h1 class="text-[38px]/[38px] md:text-[48px]/[40px] lg:text-[68px]/[68px] xl:text-[98px]/[100px] 2xl:text-[108px]/[112px] font-bold">Lorem ipsum dolor si adipisicing elit.</h1>
       </article>
 
-      <article class="w-full flex justify-center bg-red-500">
+      <article class="w-full flex justify-center bg-red-500 lg:w-6/12">
         <button
           class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[16px]/[19px] md:text-[26px]/[28px] lg:text-[38px]/[38px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-14"
         >
@@ -41,7 +39,7 @@ import HowCard from '../components/HowCard.astro';
     </HeroStructure>
 
     <!-- ! ABOUT US  -->
-    <SectionStructure idSection="test" wrapperClasses=" w-full font-Inter text-white bg-main py-5 md:py-10">
+    <SectionStructure idSection="test" wrapperClasses=" w-full font-Inter text-white">
       <h2 class="font-bold font-Inter text-[32px]/[38px] md:text-[48px] lg:text-6xl text-center border border-red w-max py-3 px-4 rounded-[24px] self-center">About us</h2>
 
       <div class="flex flex-col gap-5 lg:flex-row lg:items-center">
@@ -64,7 +62,7 @@ import HowCard from '../components/HowCard.astro';
     </SectionStructure>
 
     <!-- ! FAQ -->
-    <SectionStructure idSection="test" wrapperClasses=" font-Inter text-white py-5 md:py-10 overflow-x-hidden">
+    <SectionStructure idSection="test" wrapperClasses=" font-Inter text-white overflow-x-hidden">
       <h2 class="font-bold font-Inter text-[32px]/[38px] md:text-[48px] text-center border min-w-[150px] border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl">F.A.Q</h2>
       <!--!FAQ CARDS -->
       <article class="w-full px-3 sm:px-6 md:px-8">
@@ -79,12 +77,10 @@ import HowCard from '../components/HowCard.astro';
           <div class="swiper-pagination relative mt-10"></div>
         </div>
       </article>
-
-      <article class="flex flex-col md:flex-row md:gap-5"></article>
     </SectionStructure>
 
     <!-- ! TOURNAMENTS -->
-    <SectionStructure idSection="test" wrapperClasses=" font-Inter text-white  py-5 md:py-10 overflow-x-hidden">
+    <SectionStructure idSection="test" wrapperClasses=" font-Inter text-white  overflow-x-hidden">
       <h2 class="font-bold font-Inter text-[32px]/[38px] md:text-[48px] text-center border border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl">Tournaments</h2>
       <!--!CARDS -->
       <article class="w-full px-3 sm:px-6 md:px-8">
@@ -108,12 +104,10 @@ import HowCard from '../components/HowCard.astro';
           </div>
         </div>
       </article>
-
-      <article class="flex flex-col md:flex-row md:gap-5"></article>
     </SectionStructure>
 
     <!-- ! REGISTER -->
-    <SectionStructure idSection="test" wrapperClasses=" font-Inter text-white py-5 md:py-10 overflow-x-hidden">
+    <SectionStructure idSection="test" wrapperClasses=" font-Inter text-white overflow-x-hidden">
       <h2 class="font-Inter text-[32px]/[38px] md:text-[40px]/[48px] lg:text-6xl text-center border md:w-[70%] border-red py-3 px-4 rounded-2xl self-center">
         You’re Interested? <span class="font-bold">Register and prove yourself!</span>
       </h2>
@@ -139,6 +133,74 @@ import HowCard from '../components/HowCard.astro';
           <div class="swiper-pagination relative mt-10"></div>
         </div>
       </article>
+    </SectionStructure>
+
+    <!-- ? Contact section -->
+    <SectionStructure idSection="contact" wrapperClasses="lg:flex-row items-center mb-8 md:mb-10 lg:mb-12 xl:mb-16">
+      <article class="border-[1px] border-red rounded-2xl px-3 py-6 font-Inter flex flex-col gap-6 w-full max-w-[500px]">
+        <h2 class="text-[32px]/[38px] md:text-[34px]/[36px] lg:text-[48px]/[58px] font-bold text-white text-center">
+          Let Us <br />
+          Contact You
+        </h2>
+
+        <form action="#" method="POST" class="flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <span class="text-[20px]/[24px] md:text-[22px]/[22px] lg:text-[28px]/[37px] text-white">Name</span>
+            <input type="text" id="name" name="name" placeholder="Allan" class="border-[1px] border-red rounded-lg py-2 px-3 bg-transparent lg:text-[18px] text-white outline-none" required />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <span class="text-[20px]/[24px] md:text-[22px]/[22px] lg:text-[28px]/[37px] text-white">Last name</span>
+            <input type="text" id="lastname" name="lastname" placeholder="Smith" class="border-[1px] border-red rounded-lg py-2 px-3 bg-transparent lg:text-[18px] text-white outline-none" required />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <span class="text-[20px]/[24px] md:text-[22px]/[22px] lg:text-[28px]/[37px] text-white">E-mail</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="allan.smith@example.com"
+              class="border-[1px] border-red rounded-lg py-2 px-3 bg-transparent lg:text-[18px] text-white outline-none"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 text-white">
+            <span class="text-[20px]/[24px] md:text-[22px]/[22px] lg:text-[28px]/[37px]">Phone</span>
+            <div class="border-[1px] border-red rounded-lg flex gap-4">
+              <div class="flex items-center gap-2 pl-3">
+                <img class="country-flag w-6 h-6 object-contain" src="" alt="Country flag" />
+                <span class="country-code lg:text-[15px]"></span>
+              </div>
+              <input type="tel" id="phone" name="phone" placeholder="113 320 5525" class="py-2 px-3 bg-transparent lg:text-[18px] text-white outline-none" required />
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-red w-10/12 py-3 px-6 text-white rounded-md text-[18px]/[20px] md:text-[22px]/[22px] lg:text-[24px]/[27px] font-bold hover:scale-95 transition-all duration-200"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </article>
+
+      <div style="width: 100%">
+        <iframe
+          width="100%"
+          height="500"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Address:%C2%A0Parkside%20Business%20Centre,%20Holyhead%20Rd,%20Wolverhampton%20WV7%203DA,%20United%20Kingdom+(Prestige%20Slot%20Arena)&t=&z=19&ie=UTF8&iwloc=B&output=embed"
+        >
+          <a href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a>
+        </iframe>
+      </div>
     </SectionStructure>
   </main>
 </Layout>
