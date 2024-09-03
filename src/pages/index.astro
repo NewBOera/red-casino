@@ -7,78 +7,56 @@ import HeroStructure from '../components/HeroStructure.astro';
 <Layout title="Welcome to Astro.">
   <main class="flex flex-col gap-8 md:gap-10 lg:gap-12">
     <!-- ? Home section -->
-    <HeroStructure idSection="test" wrapperClasses="lg:flex-row">
-      <article class="flex flex-col gap-4 lg:w-7/12 lg:gap-8 lg:justify-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl relative z-20">Titulo</h1>
-        </div>
+    <HeroStructure idSection="home" wrapperClasses="text-white font-Inter justify-center items-center lg:gap-20 xl:gap-32 py-32">
+      <div class="relative top-20 bg-green-500">
+        <nav id="side-menu" class="fixed top-0 left-0 w-64 h-full bg-gray-800 mt-16 text-white transform -translate-x-full transition-transform duration-300 ease-in-out">
+          <button id="menu-toggle" class="bg-red p-3 rounded-lg fixed -right-12 z-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">About Us</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">F.A.Q.</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Tournaments</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <p class="lg:text-lg"></p>
-
-        <div class="flex lg:justify-end">
-          <a href="#about-section">
-            <button class="border-2 border-purplePrimary font-semibold rounded-lg py-3 px-10 hover:scale-95 transition-all duration-200"></button>
-          </a>
-        </div>
+      <article class="lg:w-7/12">
+        <h1 class="text-[38px]/[38px] md:text-[48px]/[40px] lg:text-[68px]/[68px] xl:text-[88px]/[94px] font-bold">Lorem ipsum dolor si adipisicing elit.</h1>
       </article>
 
-      <article class="lg:w-5/12 flex justify-center items-center h-full">
-        <div class="gradient rounded-2xl px-5 py-10">
-          <img
-            class="w-[200px] sm:w-[400px] lg:w-[350px] xl:w-[400px] 2xl:w-[500px] lg:h-[300px] object-contain shadow-hero-image"
-            src="https://static.wikia.nocookie.net/14885b3d-bf25-46c5-aa34-aecad8636a05"
-            alt=""
-          />
-        </div>
+      <article class="w-full flex justify-center bg-red-500">
+        <button
+          class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[16px]/[19px] md:text-[26px]/[28px] lg:text-[38px]/[38px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-14"
+        >
+          CALL TO ACTION
+        </button>
       </article>
     </HeroStructure>
-
-    <SectionStructure idSection="test" wrapperClasses="lg:flex-row">
-      <article class="flex flex-col gap-4 lg:w-7/12 lg:gap-8 lg:justify-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl relative z-20">Titulo</h1>
-        </div>
-
-        <p class="lg:text-lg"></p>
-
-        <div class="flex lg:justify-end">
-          <a href="#about-section">
-            <button class="border-2 border-purplePrimary font-semibold rounded-lg py-3 px-10 hover:scale-95 transition-all duration-200"></button>
-          </a>
-        </div>
-      </article>
-
-      <article class="lg:w-5/12 flex justify-center items-center h-full">
-        <div class="gradient rounded-2xl px-5 py-10">
-          <img
-            class="w-[200px] sm:w-[400px] lg:w-[350px] xl:w-[400px] 2xl:w-[500px] lg:h-[300px] object-contain shadow-hero-image"
-            src="https://static.wikia.nocookie.net/14885b3d-bf25-46c5-aa34-aecad8636a05"
-            alt=""
-          />
-        </div>
-      </article>
-    </SectionStructure>
   </main>
-
-  <!-- ! Modals -->
-  <!-- ? Age Verification Modal -->
-  <section id="age-verification-modal" class="bg-[#00000000] flex items-center justify-center min-h-screen absolute z-50 hidden">
-    <div class="fixed inset-0 w-full bg-[#000000BB] flex items-center justify-center max-h-screen">
-      <div class="background-image background-age-verification shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md">
-        <article class="flex flex-col items-center justify-center py-16 px-10 gap-10 text-white">
-          <h3 class="text-[26px]/[22px] md:text-[36px]/[38px] lg:text-[44px]/[44px] font-extrabold">Age verification</h3>
-          <p class="text-[18px]/[20px] md:text-[22px]/[22px] lg:text-[24px]/[27px] text-center">Please confirm your age before accessing this content. Are you over 18 years old?</p>
-
-          <div class="flex gap-10">
-            <button class="bg-[#147351] py-4 px-10" onclick="acceptCookies()">Yes</button>
-
-            <button class="bg-[#CA1D1D] py-4 px-10" onclick="rejectCookies()">No</button>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
 </Layout>
+
+<!-- ! Modals -->
+<!-- ? Age Verification Modal -->
+<section id="age-verification-modal" class="bg-[#00000000] flex items-center justify-center min-h-screen absolute z-50 hidden">
+  <div class="fixed inset-0 w-full bg-[#000000BB] flex items-center justify-center max-h-screen">
+    <div class="background-image background-age-verification shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md">
+      <article class="flex flex-col items-center justify-center py-16 px-10 gap-10 text-white">
+        <h3 class="text-[26px]/[22px] md:text-[36px]/[38px] lg:text-[44px]/[44px] font-extrabold">Age verification</h3>
+        <p class="text-[18px]/[20px] md:text-[22px]/[22px] lg:text-[24px]/[27px] text-center">Please confirm your age before accessing this content. Are you over 18 years old?</p>
+
+        <div class="flex gap-10">
+          <button class="bg-[#147351] py-4 px-10" onclick="acceptCookies()">Yes</button>
+
+          <button class="bg-[#CA1D1D] py-4 px-10" onclick="rejectCookies()">No</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <style>
   textarea {

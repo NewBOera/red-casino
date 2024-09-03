@@ -9,6 +9,7 @@ export default {
       },
       fontFamily: {
         Inter: ['Inter', 'sans-serif'],
+        Archivo: ['Archivo', 'sans-serif'],
       },
     },
   },

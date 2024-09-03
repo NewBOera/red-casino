@@ -7,9 +7,9 @@ interface Props {
 const { idSection, wrapperClasses } = Astro.props;
 ---
 
-<section id={`${idSection}-section`} class="flex justify-center hero-section">
+<section id={`${idSection}-section`} class="flex justify-center hero-section bg-image bg-hero">
   <div
-    class={`sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px] flex flex-col pt-[112px] lg:pt-[150px] xl:pt-[80px] w-full px-3 sm:px-6 md:px-8 gap-8 sm:gap-16 md:gap-10 ${wrapperClasses}`}
+    class={`sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px] flex flex-col py-40 lg:pt-[80px] xl:pt-[40px] w-full px-3 sm:px-6 md:px-8 gap-8 sm:gap-16 md:gap-10 ${wrapperClasses}`}
   >
     <slot />
   </div>
@@ -17,7 +17,7 @@ const { idSection, wrapperClasses } = Astro.props;
 
 <style>
   .hero-section {
-    min-height: max-content;
+    min-height: 400px;
   }
   @media (min-width: 1280px) {
     .hero-section {
@@ -30,5 +30,15 @@ const { idSection, wrapperClasses } = Astro.props;
       height: calc(100vh);
       min-height: 800px;
     }
+  }
+
+  .bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .bg-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/home/bg-hero.png');
   }
 </style>
