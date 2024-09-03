@@ -1,0 +1,27 @@
+---
+const {
+  number = '1',
+  title = 'Found the best tournament option for you',
+  trophySrc = '/public/assets/tournaments/trophy.png',
+  diceSrc = '/public/assets/tournaments/dice.png',
+  extraClasses,
+} = Astro.props;
+---
+
+<div class={`${extraClasses} bg-red flex gap-5 flex-col items-center p-3 rounded-xl swiper-slide`}>
+  <div class="bg-white rounded-full w-[48px] flex justify-center items-center h-[48px] text-red font-bold text-[32px]">
+    {number}
+  </div>
+  <h2 class="text-white font-bold text-[24px] text-center">
+    {title}
+  </h2>
+  <img src={trophySrc} alt="Trophy Image" />
+
+  <div class="flex w-full items-center gap-3">
+    <span class="h-[3px] w-[33%] bg-white"></span>
+    <div class="w-[33%] flex justify-center">
+      <img src={diceSrc} alt="Dice Image" />
+    </div>
+    <span class="h-[3px] w-[33%] bg-white"></span>
+  </div>
+</div>

@@ -21,4 +21,44 @@ const swiperHeroParams = {
   },
 };
 
-const swiperHero = new Swiper('#review-swiper', swiperHeroParams);
+const casinoCardsParams = {
+  ...swiperGlobals,
+  spaceBetween: 5,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 4000,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+};
+
+const faQParams = {
+  sticky: false,
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  spaceBetween: 5,
+  slidesPerView: 1,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+  },
+};
+const casinoSwiper = new Swiper('#casino-swiper', casinoCardsParams);
+const faqSwiper = new Swiper('#faq-swiper', faQParams);
+const howSwiper = new Swiper('#how-swiper', faQParams);
+
+console.log(faqSwiper);
