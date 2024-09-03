@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalsStructure from '../components/LegalsStructure.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <LegalsStructure idSection="legals">
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[600px] xl:min-h-[800px]">
+        <h2 class="font-bold font-Inter text-[32px]/[38px] md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl">Terms & Conditions</h2>
+      </div>
+    </LegalsStructure>
+
+    <SectionStructure idSection="legal-content">
+      <article class="flex flex-col gap-5 pb-10">
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Lorem ipsum dolor</h4>
+          <p class="text-[14px] lg:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin tortor efficitur maximus lacinia. Integer eu luctus tortor. Cras malesuada augue in velit faucibus ornare. Donec
+            vel varius leo. Sed a magna sollicitudin, ultricies leo ut, lobortis nisl. Sed ut iaculis augue, vitae elementum quam. Etiam quam enim, lobortis a imperdiet vel, auctor et neque.
+            Suspendisse ut arcu sodales, laoreet enim vel, ultricies dui.
+          </p>
+        </div>
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Lorem ipsum dolor</h4>
+          <p class="text-[14px] lg:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin tortor efficitur maximus lacinia. Integer eu luctus tortor. Cras malesuada augue in velit faucibus ornare. Donec
+            vel varius leo. Sed a magna sollicitudin, ultricies leo ut, lobortis nisl. Sed ut iaculis augue, vitae elementum quam. Etiam quam enim, lobortis a imperdiet vel, auctor et neque.
+            Suspendisse ut arcu sodales, laoreet enim vel, ultricies dui.
+          </p>
+        </div>
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Lorem ipsum dolor</h4>
+          <p class="text-[14px] lg:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin tortor efficitur maximus lacinia. Integer eu luctus tortor. Cras malesuada augue in velit faucibus ornare. Donec
+            vel varius leo. Sed a magna sollicitudin, ultricies leo ut, lobortis nisl. Sed ut iaculis augue, vitae elementum quam. Etiam quam enim, lobortis a imperdiet vel, auctor et neque.
+            Suspendisse ut arcu sodales, laoreet enim vel, ultricies dui.
+          </p>
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+</Layout>
