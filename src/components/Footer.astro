@@ -5,77 +5,162 @@
 <!-- ! Footer -->
 <footer class="flex bg-black justify-center py-10 md:py-4 lg:py-6 xl:py-12 gradient-blue text-white">
   <div class="flex flex-col px-3 sm:px-6 md:px-8 gap-8 md:gap-5 lg:gap-10 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]">
-    <div class="flex flex-col gap-5 md:flex-row">
-      <!-- ! Logo/Name/LINKS -->
-      <div class="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16 md:w-[70%]">
-        <!-- ! Logo/Name -->
-        <div class="flex items-center justify-center self-center gap-5 h-full">
-          <a href="#home-section">
-            <img src="./assets/footer/logo.png" class="w-[53px] h-auto" alt="Logo" title="Slots Volindo" />
-          </a>
-          <!-- <h4 class="font-dejanire text-[28px]/[30px] lg:text-[40px]/[22px]">NAME</h4> -->
-        </div>
+    <div class="flex flex-col justify-center gap-6 items-center lg:hidden w-full">
+      <article class="flex items-center gap-4">
+        <img class="w-8 h-8 object-contain sm:w-12 sm:h-12" src="/public/assets/footer/logo.png" alt="Prestige Slot Arena logo" title="Prestige Slot Arena" />
+        <h3 class="font-bold text-[20px]/[23px] sm:text-[36px]/[39px] lg:text-[48px]/[52px]">Prestige Slot Arena</h3>
+      </article>
 
-        <!-- ! LINKS -->
-        <div
-          class="flex justify-between text-[14px] w-[80%] md:w-full font-bold items-center self-center flex-row flex-wrap [&>a]:cursor-pointer lg:text-[16px]/[27px] lg:gap-x-8 lg:gap-y-7 [&>a]:w-[48%] lg:[&>a]:w-[33%] md:[&>a]:w-[48%] xl:[&>a]:max-w-max xl:w-[70%] gap-2 md:gap-3"
-        >
-          <a href="./privacy.html" class="font-DM">Privacy Policy</a>
-          <a href="./terms.html" class="font-DM">Terms and Conditions</a>
-          <a href="./contact-us.html" class="font-DM">Contact Us</a>
-          <a href="./cookies.html" class="font-DM">Cookies</a>
-          <a href="./gambling-disclaimer.html" class="font-DM">Gambling Disclaimer</a>
-          <a href="./cancellation.html" class="font-DM">Cancellation Policy</a>
-          <a href="./legal-disclosure.html" class="font-DM">Legal Disclosure</a>
-          <a href="./transparency.html" class="font-DM">Transparency Disclosure</a>
+      <article class="flex flex-col items-center gap-4 w-full sm:hidden">
+        <h4 class="font-semibold text-[18px]/[18px]">Subscribe to our Newsletter</h4>
+        <form id="subscription-form-mob" class="flex flex-col gap-2 w-full">
+          <input type="email" placeholder="anthony.shelby@example.com" class="bg-transparent py-4 pl-6 border-[1px] border-red rounded-full px-1 flex justify-between w-full" />
+          <button onclick="sendForm('subscription-form-mob', 'Successfully subscribed')" class="bg-red rounded-full py-4 px-3">Subscribe</button>
+        </form>
+      </article>
+
+      <article class="hidden flex-col items-center gap-3 w-max sm:flex sm:w-full">
+        <h4 class="font-semibold text-[24px]/[22px]">Subscribe to our Newsletter</h4>
+        <div class="border-[1px] border-red rounded-full py-1 px-1 flex justify-between w-full">
+          <input type="email" name="email" placeholder="anthony.shelby@example.com" class="bg-transparent py-4 pl-6 w-[70%]" />
+          <button class="bg-red rounded-full py-4 px-3 w-[30%] font-semibold text-[16px]/[16px] sm:text-[18px]/[22px]">Subscribe</button>
         </div>
-      </div>
+      </article>
+
+      <article class="flex flex-col gap-2 items-center w-full">
+        <h4 class="text-[18px]/[22px] sm:text-[22px]/[22px] font-bold self-start">Company Details</h4>
+        <ul class="text-[14px]/[14px] sm:text-[16px]/[22px] flex flex-col gap-3 w-full">
+          <li><span class="font-semibold">Name:</span> Prestige Slot Arena</li>
+          <li><span class="font-semibold">Address</span> Parkside Business Centre, Holyhead Rd, Wolverhampton WV7 3DA, United Kingdom</li>
+          <li><span class="font-semibold">Phone number:</span> +44 780 962 5288</li>
+          <li><span class="font-semibold">CIF:</span> B86613452</li>
+          <li><span class="font-semibold">Legal form:</span>  LIMITED SOCIETY</li>
+          <li><span class="font-semibold">Social object</span>  ADVERTISING AND MARKETING</li>
+        </ul>
+      </article>
+
+      <ul class="text-[14px]/[14px] sm:text-[16px]/[22px] flex flex-col gap-4 w-full text-center [&>li>a]:underline [&>li>a]:underline-offset-4 [&>li>a]:hover:cursor-pointer">
+        <li>
+          <a href="./privacy-policy.html" target="_blank">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="./terms-and-conditions.html" target="_blank">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="./cookie-policy.html" target="_blank">Cookie Policy</a>
+        </li>
+        <li>
+          <a href="./responsible-gambling-statement.html" target="_blank">Responsible Gambling Statement</a>
+        </li>
+        <li>
+          <a href="./cancellation-policy.html" target="_blank">Cancellation Policy</a>
+        </li>
+        <li>
+          <a href="payment-policy" target="_blank">Payment Policy</a>
+        </li>
+      </ul>
 
       <!-- ! Logos -->
-      <div class="flex flex-col border-[2px] border-white p-3 rounded-[20px] md:self-center md:w-[30%] xl:w-[20%] items-center justify-center gap-4 h-max">
+      <div class="flex flex-col border-[2px] border-red p-3 rounded-[20px] md:self-center xl:w-[20%] items-center justify-center gap-4 h-max sm:flex-row sm:w-[80%]">
         <div class="w-4/12 flex justify-center">
-          <img src="./assets/footer/100.png" class="w-[80px] md:w-[200px] lg:w-[115px] 2xl:w-[250px]" alt="Logo" />
+          <img src="./assets/footer/100.png" class="w-[80px] md:w-[120px] lg:w-[115px] 2xl:w-[250px] object-contain" alt="Security" title="Security" />
         </div>
-        <div class="flex flex-wrap h-max justify-center w-full gap-5 [&>img]:w-[55px] [&>img]:h-auto">
-          <img src="./assets/footer/MasterCard_Logo.svg 1.png" alt="master-card-logo" />
-          <img src="./assets/footer/MasterCard_Logo.svg 2.png" alt="maestro-logo" />
-          <img src="./assets/footer/MasterCard_Logo.svg 3.png" alt="visa-logo" />
-          <img src="./assets/footer/MasterCard_Logo.svg 4.png" alt="american-express-logo" />
-          <img src="./assets/footer/MasterCard_Logo.svg 5.png" alt="google-pay-logo" />
-          <img src="./assets/footer/MasterCard_Logo.svg 6.png" alt="apple-pay-logo" />
+        <div class="flex flex-wrap h-max justify-center w-full gap-5 [&>img]:w-[55px] [&>img]:h-auto sm:w-6/12">
+          <img src="./assets/footer/MasterCard_Logo.svg 1.png" alt="master-card-logo" title="MasterCard" />
+          <img src="./assets/footer/MasterCard_Logo.svg 2.png" alt="maestro-logo" title="Maestro" />
+          <img src="./assets/footer/MasterCard_Logo.svg 3.png" alt="visa-logo" title="VISA" />
+          <img src="./assets/footer/MasterCard_Logo.svg 4.png" alt="american-express-logo" title="American Express" />
+          <img src="./assets/footer/MasterCard_Logo.svg 5.png" alt="google-pay-logo" title="Google Pay" />
+          <img src="./assets/footer/MasterCard_Logo.svg 6.png" alt="apple-pay-logo" title="Apple Pay" />
         </div>
       </div>
+
+      <p class="text-[12px]/[14px] sm:text-[14px]/[18px] text-justify">
+        Content and information displayed on this site are only for informational purposes, and do not constitute legal, financial or professional advice at all. Although our aim is to provide the
+        most up to date and accurate information, we do not guarantee its completeness, accuracy or timeliness. Participation in poker events is subject to the specific terms and conditions of each
+        tournament. Before registering, it is your responsibility to read and comply with all the requirements and rules of each event. We reserve the right to change or cancel events without notice.
+        To the fullest extent permitted by the law we will not be liable for any consequential, incidental, indirect, or punitive damages arising from the use of this website, or participation in the
+        events promoted here. We do not guarantee that the website will be free of mistakes, viruses, or other harmful components. We promote responsible gambling. If you ever feel overwhelmed, we
+        encourage you to seek professional help right away. We provide contacts and resources for organizations that offer assistance and support. 2024/ all rights reserved.
+      </p>
     </div>
 
-    <div class="flex flex-col md:grow gap-5">
-      <div class="flex flex-col gap-4 self-center w-full">
-        <div class="flex flex-col items-center gap-4 text-left">
-          <p class="text-[14px]/[17px]">
-            'CHANGE DOMAIN' is operated by 'CHANGE NAME'. The information of the hotels we present may change without prior notice, we are not responsible for the services provided in the hotel of
-            your choice, the main purpose of this website is to inform and facilitate the booking process by presenting the most reliable and exclusive information possible.-
-          </p>
+    <div class="hidden lg:flex justify-between gap-10">
+      <article class="w-7/12 flex flex-col gap-8">
+        <article class="flex items-center gap-4">
+          <img class="w-8 h-8 object-contain sm:w-12 sm:h-12" src="/public/assets/footer/logo.png" alt="Prestige Slot Arena logo" title="Prestige Slot Arena" />
+          <h3 class="font-bold text-[20px]/[23px] sm:text-[36px]/[39px] lg:text-[48px]/[52px]">Prestige Slot Arena</h3>
+        </article>
 
-          <div class="flex flex-col gap-2 items-center">
-            <h4 class="text-[18px]/[22px] self-start text-yellow">Quick reminder about responsible gaming:</h4>
-            <p class="text-[14px]/[17px]">
-              Gambling should be a source of entertainment, It is important to stay within your means and budget, and it is only for people 18 years old and over. If you feel you need help, visit
-              BeGambleAware.org. Have a great time during your stay and always keep your gaming enjoyable and within your financial limits. Playing responsibly is essential for a positive experience.
-            </p>
+        <article class="flex flex-col gap-2 items-center w-full">
+          <h4 class="text-[18px]/[22px] sm:text-[22px]/[22px] font-bold self-start">Company Details</h4>
+          <ul class="text-[18px]/[22px] flex flex-col gap-3 w-full">
+            <li><span class="font-semibold">Name:</span> Prestige Slot Arena</li>
+            <li><span class="font-semibold">Address</span> Parkside Business Centre, Holyhead Rd, Wolverhampton WV7 3DA, United Kingdom</li>
+            <li><span class="font-semibold">Phone number:</span> +44 780 962 5288</li>
+            <li><span class="font-semibold">CIF:</span> B86613452</li>
+            <li><span class="font-semibold">Legal form:</span>  LIMITED SOCIETY</li>
+            <li><span class="font-semibold">Social object</span>  ADVERTISING AND MARKETING</li>
+          </ul>
+        </article>
+
+        <p class="text-[12px]/[14px] sm:text-[14px]/[18px] text-justify">
+          Content and information displayed on this site are only for informational purposes, and do not constitute legal, financial or professional advice at all. Although our aim is to provide the
+          most up to date and accurate information, we do not guarantee its completeness, accuracy or timeliness. Participation in poker events is subject to the specific terms and conditions of each
+          tournament. Before registering, it is your responsibility to read and comply with all the requirements and rules of each event. We reserve the right to change or cancel events without
+          notice. To the fullest extent permitted by the law we will not be liable for any consequential, incidental, indirect, or punitive damages arising from the use of this website, or
+          participation in the events promoted here. We do not guarantee that the website will be free of mistakes, viruses, or other harmful components. We promote responsible gambling. If you ever
+          feel overwhelmed, we encourage you to seek professional help right away. We provide contacts and resources for organizations that offer assistance and support. 2024/ all rights reserved.
+        </p>
+      </article>
+
+      <article class="flex flex-col gap-8 w-5/12">
+        <article class="hidden flex-col items-center gap-3 w-max sm:flex sm:w-full">
+          <h4 class="font-semibold text-[24px]/[22px]">Subscribe to our Newsletter</h4>
+          <form id="subscription-form" class="border-[1px] border-red rounded-full py-1 px-1 flex justify-between w-full">
+            <input type="email" name="email" placeholder="anthony.shelby@example.com" class="bg-transparent py-4 pl-6 w-[70%]" />
+            <button onclick="sendForm('subscription-form', 'Successfully subscribed')" class="bg-red rounded-full py-4 px-3 w-[30%] font-semibold text-[16px]/[16px] sm:text-[18px]/[22px]">
+              Subscribe
+            </button>
+          </form>
+        </article>
+
+        <ul class="text-[14px]/[14px] sm:text-[16px]/[22px] flex flex-col gap-4 w-full text-end [&>li>a]:underline [&>li>a]:underline-offset-4 [&>li>a]:hover:cursor-pointer">
+          <li>
+            <a href="./privacy-policy.html" target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="./terms-and-conditions.html" target="_blank">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="./cookie-policy.html" target="_blank">Cookie Policy</a>
+          </li>
+          <li>
+            <a href="./responsible-gambling-statement.html" target="_blank">Responsible Gambling Statement</a>
+          </li>
+          <li>
+            <a href="./cancellation-policy.html" target="_blank">Cancellation Policy</a>
+          </li>
+          <li>
+            <a href="payment-policy" target="_blank">Payment Policy</a>
+          </li>
+        </ul>
+
+        <!-- ! Logos -->
+        <div class="flex flex-col border-[2px] border-red p-3 rounded-[20px] md:self-center items-center justify-center gap-4 h-max sm:flex-row">
+          <div class="w-4/12 flex justify-center">
+            <img src="./assets/footer/100.png" class="w-[80px] md:w-[120px] lg:w-[115px] 2xl:w-[250px] object-contain" alt="Security" title="Security" />
           </div>
-
-          <div class="flex flex-col gap-2 items-center w-full">
-            <h4 class="text-[18px]/[22px] font-bold self-start">Us</h4>
-            <ul class="text-[12px]/[14px] md:text-[16px]/[22px] flex flex-col gap-2 w-full">
-              <li>Name: 'CHANGE NAME'</li>
-              <li>Address: 3rd Floor, 22-26 The Headrow, Leeds LS1 8EQ, United Kingdom</li>
-              <li>Phone number: +44 3451 200 100</li>
-            </ul>
+          <div class="flex flex-wrap h-max justify-center w-full gap-5 [&>img]:w-[55px] [&>img]:h-auto sm:w-6/12">
+            <img src="./assets/footer/MasterCard_Logo.svg 1.png" alt="master-card-logo" title="MasterCard" />
+            <img src="./assets/footer/MasterCard_Logo.svg 2.png" alt="maestro-logo" title="Maestro" />
+            <img src="./assets/footer/MasterCard_Logo.svg 3.png" alt="visa-logo" title="VISA" />
+            <img src="./assets/footer/MasterCard_Logo.svg 4.png" alt="american-express-logo" title="American Express" />
+            <img src="./assets/footer/MasterCard_Logo.svg 5.png" alt="google-pay-logo" title="Google Pay" />
+            <img src="./assets/footer/MasterCard_Logo.svg 6.png" alt="apple-pay-logo" title="Apple Pay" />
           </div>
         </div>
-      </div>
-      <div class="flex justify-center w-full">
-        <span class="text-[18px]/[14px] font-extralight">2024 All rights reserved | 'CHANGE NAME'</span>
-      </div>
+      </article>
     </div>
   </div>
 </footer>
