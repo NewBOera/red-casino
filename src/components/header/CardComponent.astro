@@ -4,32 +4,33 @@ const {
   imageSrc = '/public/assets/tournaments/1.jpeg',
   altText = '',
   title = 'Deep Stack Poker Tournament',
+
   dateRange = 'Jun 28, 2024 - Dec 27, 2024',
-  eventDetails = 'Last two Fridays of each month',
+  eventDetails = '',
   description = "Join the Friday Night Deep Stack Poker Tournament with a guaranteed $5,000 prize pool in No Limit Hold'em! This event is held at 6 PM on the last two Fridays of each month until December 2024. The buy-in is $120, which covers a $20 entry fee and contributes $100 to the prize pool. Players kick off the tournament with 10,000 in chips.",
-  buttonText = 'CALL TO ACTION',
-  buttonLink = '#',
+  buttonText = 'Get tickets now! ',
+  buttonLink = '#contact-section',
 } = Astro.props;
 ---
 
-<div class="flex flex-col gap-3 border justify-between border-red rounded-[10px] p-3 py-5 swiper-slide h-[850px]">
+<div class="flex flex-col gap-3 border justify-between border-red rounded-[10px] p-3 py-5 swiper-slide h-[800px] sm:h-[550px] md:h-[850px] lg:h-[750px] xl:h-[700px]">
   <div class="h-[30%]">
-    <img src={imageSrc} class="w-full h-full object-cover rounded-[10px]" alt={altText} />
+    <img src={imageSrc} title={title} class="w-full h-full object-cover rounded-[10px]" alt={altText} />
   </div>
 
   <div class="flex justify-center items-center h-[15%]">
     <h3 class="text-2xl font-bold text-center">{title}</h3>
   </div>
 
-  <div class="flex flex-col gap-5 border border-red h-[15%] p-3">
+  <div class="flex flex-col items-center justify-center gap-2 border border-red h-[15%] p-3">
     <div class="flex items-center justify-center gap-2">
       <img src="./public/assets/tournaments/icon.png" class="w-[30px] h-[30px]" alt="" />
-      <span class="text-[13px] md:text-base">{dateRange}</span>
+      <span class="text-[13px] text-center md:text-[15px]">{dateRange}</span>
     </div>
     <span class="font-bold text-[14px] text-center">{eventDetails}</span>
   </div>
 
-  <div class="h-[40%]">
+  <div class="h-[40%] flex flex-col gap-3">
     <h4 class="font-bold">Details:</h4>
     <p class="text-[14px]">{description}</p>
   </div>

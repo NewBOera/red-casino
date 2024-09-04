@@ -33,6 +33,10 @@ const casinoCardsParams = {
       slidesPerView: 2,
       spaceBetween: 20,
     },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
 };
 
@@ -52,7 +56,7 @@ const faQParams = {
 
   breakpoints: {
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2.2,
       spaceBetween: 20,
     },
   },

@@ -55,9 +55,9 @@ import HowCard from '../components/HowCard.astro';
             events. Sign up and indulge into the fever and style of casino entertainment. Explore our upcoming events and book your tickets right away for an unforgettable experience!
           </p>
 
-          <article class="w-full flex justify-center bg-red-500 lg:w-6/12">
+          <article class="w-full flex justify-center bg-red-500">
             <button
-              class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[15px]/[16px] md:text-[18px]/[20px] lg:text-[20px]/[22px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-8"
+              class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] lg:w-6/12 rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[15px]/[16px] md:text-[18px]/[20px] lg:text-[20px]/[22px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-8"
             >
               Get VIP Tickets Here!
             </button>
@@ -80,30 +80,9 @@ import HowCard from '../components/HowCard.astro';
           <div class="swiper-wrapper relative w-max">
             <FaqCard
               title="What is our service?"
-              description=`Prestige Slot Arena is your ultimate source of the hottest casino event tickets.  Our speciality is providing tickets to a large variety of thrilling casino events, ensuring you have access to the best available casino tournaments.
-Our committed call center staff will assist you to lock down and get you tickets to the casino events of your choice with ease`
+              description=`Prestige Slot Arena is your ultimate source of the hottest casino event tickets.  Our speciality is providing tickets to a large variety of thrilling casino events, ensuring you have access to the best available casino tournaments. Our committed call center staff will assist you to lock down and get you tickets to the casino events of your choice with ease`
               .
             />
-            <FaqCard title="How does the step-by-step process work?">
-              <ol>
-                <li>
-                  <span class="font-bold">Explore events.</span> Browse and choose from our most complete list of upcoming casino events.
-                </li>
-                <li>
-                  <span class="font-bold">Share us your details.</span> out the form with your contact information.
-                </li>
-                <li>
-                  <span class="font-bold">Staff callback.</span> An expert agent from our call center will contact you to custom your needs and assist you with available options.
-                </li>
-                <li>
-                  <span class="font-bold">Lock down your tickets.</span> Once you have a preferred event, our agent will help you secure your tickets and complete your order.
-                </li>
-
-                <li>
-                  <span class="font-bold">Have fun!</span> Get your tickets and prepare to enjoy an exciting casino event.
-                </li>
-              </ol></FaqCard
-            >
 
             <FaqCard
               title="Who are our partners?"
@@ -156,19 +135,72 @@ Our committed call center staff will assist you to lock down and get you tickets
         <div id="casino-swiper" class="swiper w-full">
           <div class="swiper-wrapper w-max">
             <CardComponent />
-            <CardComponent />
             <CardComponent
               imageSrc="/public/assets/tournaments/2.jpeg"
               altText="High Hand Image"
               title="High Hand"
               dateRange="Jul 1, 2024 - Dec 31, 2024"
-              eventDetails="Tuesday, Wednesday, Thursday, and Saturday"
               description="Join the High Hand Poker Tournament with a $13,000 guaranteed prize pool! Play on Tuesdays and Wednesdays from 4-6 PM and 10 PM-12 AM, or on Thursdays and Saturdays from 12 PM-12 AM. The buy-in is $120, with $100 going to the prize pool. Start with 10,000 chips and aim for the win!"
-              buttonText="Sign Up Now"
-              buttonLink="/signup"
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/3.png"
+              altText="Poker Suited Splash Pots"
+              title="Poker Suited Splash Pots"
+              dateRange="Sundays from Sept 8, 2024 - Dec 29, 2024"
+              description="Play Poker Suited Splash Pots every Sunday at 5pm! With an increasing prize pool every break level and race off.  First two levels are 30 minutes. 3th - 5th levels are 20 minutes. 6th level and on are 15 minutes each.  All bets must be no less than the big blind.  The buy-in is $60 that includes satellite, entry and gratuity fees. Players receive 7,500 in tournament chips to start."
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/4.png"
+              altText="$1,500 Added Blackjack Tournament"
+              title="$1,500 Added Blackjack Tournament"
+              dateRange="Sept 9, 2024 - March 11, 2025"
+              eventDetails="Second Tuesday of each month"
+              description="Get into the $1,500 Added Blackjack Tournament action with this $30 buy-in tourney. Sign-up begins at 4pm with qualifying rounds at 5, 6, and 7pm, and finals at 9pm. Sharpen your skills before the tournament with $2 blackjack any day when playing the bonus bet!"
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/5.png"
+              altText="$15,000 Wise Guys Slot Tournament"
+              title="$15,000 Wise Guys Slot Tournament"
+              dateRange="Sept 23 - 25, 2024"
+              description="Join to play anytime between 10am to 12:30pm, Monday - Wednesday.  Make sure to register between 9am to noon from Monday to Wednesday.  A $50 entry fee gets you in 1, 2, or all 3 days of the tournament play.  There are $5,000 in prizes each day!"
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/6.png"
+              altText="Puck Drop Payout $5K Slot Tournament "
+              title="Puck Drop Payout $5K Slot Tournament "
+              dateRange="Oct 7 - 9, 2024"
+              description="Join the Puck Drop Payout Tournament with a guaranteed $5,000 prize pool. Free for all invited guests. $50 entry for all other guests. Prizes will be awarded in cash or Free Slot Play. Must attend registration in order to participate.  Registration on Oct 7, 2pm - 4pm.  And late registration on Oct 8, 8am - 9:45am.  First place gets $2,000."
             />
 
-            <CardComponent />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/7.png"
+              altText="No-Limit Texas Hold’em  "
+              title="No-Limit Texas Hold’em  "
+              dateRange="Sept 11, 2024 - Dec 25, 2024"
+              description="Join the No-Limit Texas Hold’em every Wednesday at 6:30pm! With an increasing prize pool every break level and race off.  First two levels are 30 minutes.  3th - 5th levels are 20 minutes. 6th level and on are 15 minutes each.  All bets must be no less than the big blind.  The buy-in is $80 which includes satellite, entry and gratuity fees. Players receive $7,500 in tournament chips to kick off."
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/8.png"
+              altText="Pigskin Giveaway"
+              title="Pigskin Giveaway"
+              dateRange="Aug 12, 2024 - Feb 24, 2024"
+              eventDetails="During select football games and Monday nights"
+              description="Join during select professional and college football games throughout the week.  Splashpots will be awarded anytime a team scores.  Touchdown = $75 splashpot.  Field goal = $50 splashpot.  Safety = $100 splashpot."
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/9.png"
+              altText="Super Satellite Texas Hold’em"
+              title="Super Satellite Texas Hold’em"
+              dateRange="Sept 12, 2024 - Dec 28, 2024"
+              description="Challenge your luck at the Super Satellite Texas Hold’em every Thursday at 6:30pm! With an increasing prize pool every break level and race off.  First two levels are 30 minutes.  3th - 5th levels are 20 minutes. 6th level and on are 15 minutes each.  All bets must be no less than the big blind.  The buy-in is $100 which includes satellite, entry and gratuity fees. Players receive $10,000 in tournament chips to start with."
+            />
+            <CardComponent
+              imageSrc="/public/assets/tournaments/10.png"
+              altText="Friday Night Frenzy"
+              title="Friday Night Frenzy"
+              dateRange="Every Friday 11am - 2am"
+              description="Join for drawings every hour from 11am to 2am on Fridays. Poker players get drawing tickets throughout the week for winning with High Hands. Hold’em players receive a ticket for winning with a flush or better. Omaha, 7 Card Stud, Pineapple and Crazy Pineapple get a ticket for winning with a full house or better. Big O players get a ticket for winning with 8’s full or better."
+            />
           </div>
         </div>
       </article>
@@ -184,19 +216,76 @@ Our committed call center staff will assist you to lock down and get you tickets
       <!--!HOW IT WORKS CARDS -->
       <article class="w-full px-3 sm:px-6 md:px-8">
         <article class="lg:flex lg:justify-center gap-5 flex-row flex-wrap hidden">
-          <HowCard extraClasses="lg:w-[30%]" />
-          <HowCard extraClasses="lg:w-[30%]" />
-          <HowCard extraClasses="lg:w-[30%]" />
-          <HowCard extraClasses="lg:w-[30%]" />
-          <HowCard extraClasses="lg:w-[30%]" />
+          <HowCard extraClasses="lg:w-[30%]" number="1" title="Explore events." trophySrc="/public/assets/tournaments/trophy.png" diceSrc="/public/assets/tournaments/dice.png" />
+          <HowCard
+            extraClasses="lg:w-[30%]"
+            number="2"
+            title="Share us your details."
+            description="Fill out the form with your contact information."
+            trophySrc="/public/assets/tournaments/trophy.png"
+            diceSrc="/public/assets/tournaments/dice.png"
+          />
+          <HowCard
+            extraClasses="lg:w-[30%]"
+            number="3"
+            title="Staff callback."
+            description="An expert agent from our call center will contact you to custom your needs and assist you with available options."
+            trophySrc="/public/assets/tournaments/trophy.png"
+            diceSrc="/public/assets/tournaments/dice.png"
+          />
+          <HowCard
+            extraClasses="lg:w-[30%]"
+            number="4"
+            description="Once you have a preferred event, our agent will help you secure your tickets and complete your order."
+            title="Lock down your tickets"
+            trophySrc="/public/assets/tournaments/trophy.png"
+            diceSrc="/public/assets/tournaments/dice.png"
+          />
+          <HowCard
+            extraClasses="lg:w-[30%]"
+            number="5"
+            title="Have fun!"
+            description="Get your tickets and prepare to enjoy an exciting casino event."
+            trophySrc="/public/assets/tournaments/trophy.png"
+            diceSrc="/public/assets/tournaments/dice.png"
+          />
         </article>
         <!-- Swiper -->
         <div id="how-swiper" class="swiper w-full lg:hidden">
           <div class="swiper-wrapper relative w-max">
-            <HowCard />
-            <HowCard />
-            <HowCard />
-            <HowCard />
+            <HowCard extraClasses="lg:w-[30%]" number="1" title="Explore events." trophySrc="/public/assets/tournaments/trophy.png" diceSrc="/public/assets/tournaments/dice.png" />
+            <HowCard
+              extraClasses="lg:w-[30%]"
+              number="2"
+              title="Share us your details."
+              description="Fill out the form with your contact information."
+              trophySrc="/public/assets/tournaments/trophy.png"
+              diceSrc="/public/assets/tournaments/dice.png"
+            />
+            <HowCard
+              extraClasses="lg:w-[30%]"
+              number="3"
+              title="Staff callback."
+              description="An expert agent from our call center will contact you to custom your needs and assist you with available options."
+              trophySrc="/public/assets/tournaments/trophy.png"
+              diceSrc="/public/assets/tournaments/dice.png"
+            />
+            <HowCard
+              extraClasses="lg:w-[30%]"
+              number="4"
+              description="Once you have a preferred event, our agent will help you secure your tickets and complete your order."
+              title="Lock down your tickets"
+              trophySrc="/public/assets/tournaments/trophy.png"
+              diceSrc="/public/assets/tournaments/dice.png"
+            />
+            <HowCard
+              extraClasses="lg:w-[30%]"
+              number="5"
+              title="Have fun!"
+              description="Get your tickets and prepare to enjoy an exciting casino event."
+              trophySrc="/public/assets/tournaments/trophy.png"
+              diceSrc="/public/assets/tournaments/dice.png"
+            />
           </div>
           <div class="swiper-pagination relative mt-10"></div>
         </div>
@@ -315,9 +404,9 @@ Our committed call center staff will assist you to lock down and get you tickets
     --swiper-pagination-fraction-color: inherit;
     --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
     --swiper-pagination-progressbar-size: 4px;
-    --swiper-pagination-bullet-size: 38px;
-    --swiper-pagination-bullet-width: 38px;
-    --swiper-pagination-bullet-height: 38px;
+    --swiper-pagination-bullet-size: 30px;
+    --swiper-pagination-bullet-width: 30px;
+    --swiper-pagination-bullet-height: 30px;
     --swiper-pagination-bullet-inactive-color: #dddddd;
     --swiper-pagination-bullet-inactive-opacity: 0.2;
     --swiper-pagination-bullet-opacity: 1;

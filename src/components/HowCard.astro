@@ -1,20 +1,22 @@
 ---
 const {
   number = '1',
-  title = 'Found the best tournament option for you',
+  title = 'Explore events. ',
+  description = 'Browse and choose from our most complete list of upcoming casino events.',
   trophySrc = '/public/assets/tournaments/trophy.png',
   diceSrc = '/public/assets/tournaments/dice.png',
   extraClasses,
 } = Astro.props;
 ---
 
-<div class={`${extraClasses} bg-red flex gap-5 flex-col items-center p-3 rounded-xl swiper-slide`}>
-  <div class="bg-white rounded-full w-[48px] flex justify-center items-center h-[48px] text-red font-bold text-[32px]">
+<div class={`${extraClasses} bg-red flex gap-5 flex-col items-center p-3 rounded-xl swiper-slide lg:min-h-[410px] justify-between`}>
+  <div class="bg-white rounded-full w-[48px] flex justify-center items-center h-[48px] md:w-[55px] md:h-[55px] text-red font-bold text-[32px]">
     {number}
   </div>
-  <h2 class="text-white font-bold text-[24px] text-center">
+  <h2 class="text-white font-bold text-[24px] lg:text-3xl text-center">
     {title}
   </h2>
+  <p class="text-center lg:text-lg">{description}</p>
   <img src={trophySrc} alt="Trophy Image" />
 
   <div class="flex w-full items-center gap-3">
