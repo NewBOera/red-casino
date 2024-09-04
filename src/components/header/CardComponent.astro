@@ -9,7 +9,6 @@ const {
   eventDetails = '',
   description = "Join the Friday Night Deep Stack Poker Tournament with a guaranteed $5,000 prize pool in No Limit Hold'em! This event is held at 6 PM on the last two Fridays of each month until December 2024. The buy-in is $120, which covers a $20 entry fee and contributes $100 to the prize pool. Players kick off the tournament with 10,000 in chips.",
   buttonText = 'Get tickets now! ',
-  buttonLink = '#contact-section',
 } = Astro.props;
 ---
 
@@ -35,9 +34,9 @@ const {
     <p class="text-[14px]">{description}</p>
   </div>
 
-  <a class="justify-center items-center flex h-[10%]" href={buttonLink}>
-    <button class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">{buttonText}</button>
-  </a>
+  <div class="justify-center items-center flex h-[10%]">
+    <button onclick="goToBookingForm(title)" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">{buttonText}</button>
+  </div>
 </div>
 
 <style>

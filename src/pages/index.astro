@@ -325,6 +325,22 @@ import NavbarMobile from '../components/header/NavbarMobile.astro';
             </div>
           </div>
 
+          <div class="flex flex-col gap-2">
+            <span class="text-[20px]/[24px] md:text-[22px]/[22px] lg:text-[28px]/[37px] text-white">Event of interest</span>
+            <select class="border-[1px] border-red rounded-lg py-2 px-3 bg-transparent lg:text-[18px] outline-none text-white [&>option]:text-black" name="event-select" id="event-select">
+              <option value="Deep Stack Poker Tournament">Deep Stack Poker Tournament</option>
+              <option value="High Hand">High Hand</option>
+              <option value="Poker Suited Splash Pots">Poker Suited Splash Pots</option>
+              <option value="$1,500 Added Blackjack Tournament">$1,500 Added Blackjack Tournament</option>
+              <option value="$15,000 Wise Guys Slot Tournament">$15,000 Wise Guys Slot Tournament</option>
+              <option value="Puck Drop Payout $5K Slot Tournament">Puck Drop Payout $5K Slot Tournament</option>
+              <option value="No-Limit Texas Hold’em">No-Limit Texas Hold’em</option>
+              <option value="Pigskin Giveaway">Pigskin Giveaway</option>
+              <option value="Super Satellite Texas Hold’em">Super Satellite Texas Hold’em</option>
+              <option value="Friday Night Frenzy">Friday Night Frenzy</option>
+            </select>
+          </div>
+
           <div class="flex justify-center">
             <button
               onclick="sendForm('contact-form')"
