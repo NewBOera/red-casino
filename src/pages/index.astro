@@ -9,7 +9,7 @@ import NavbarDesktop from '../components/header/NavbarDesktop.astro';
 import NavbarMobile from '../components/header/NavbarMobile.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="">
   <NavbarMobile isLanding />
   <NavbarDesktop isLanding />
   <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
@@ -47,13 +47,13 @@ import NavbarMobile from '../components/header/NavbarMobile.astro';
             events. Sign up and indulge into the fever and style of casino entertainment. Explore our upcoming events and book your tickets right away for an unforgettable experience!
           </p>
 
-          <article class="w-full flex justify-center bg-red-500">
+          <a href="#contact-section" class="w-full flex justify-center bg-red-500">
             <button
               class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] lg:w-6/12 rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[15px]/[16px] md:text-[18px]/[20px] lg:text-[20px]/[22px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-8"
             >
               Get VIP Tickets Here!
             </button>
-          </article>
+          </a>
         </div>
 
         <div class="h-[220px] md:h-[480px] lg:w-[49%]">
@@ -109,13 +109,13 @@ import NavbarMobile from '../components/header/NavbarMobile.astro';
         </div>
       </article>
 
-      <article class="w-full flex justify-center bg-red-500">
+      <a href="#contact-section" class="w-full flex justify-center bg-red-500">
         <button
           class="uppercase bg-gradient-to-b from-[#F30C36] to-[#8D071F] rounded-full py-3 px-8 border-[1px] border-[#FFFFFF] text-[15px]/[16px] md:text-[18px]/[20px] lg:text-[20px]/[22px] font-bold hover:scale-95 transition-all duration-200 lg:py-4 lg:px-8"
         >
           Get VIP Tickets Here!
         </button>
-      </article>
+      </a>
     </SectionStructure>
 
     <!-- ! TOURNAMENTS -->
