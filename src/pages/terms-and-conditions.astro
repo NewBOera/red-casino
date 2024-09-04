@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalsStructure from '../components/LegalsStructure.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import NavbarMobile from '../components/header/NavbarMobile.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <NavbarMobile isLanding={false} />
+
+  <NavbarDesktop isLanding={false} />
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <LegalsStructure idSection="legals">
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[400px] xl:h-[550px]">
+        <h2 class="font-bold font-Inter text-[24px]/[38px] text-wrap md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl xl:text-7xl">
+          Terms & Conditions
+        </h2>
+      </div>
+    </LegalsStructure>
+
+    <SectionStructure idSection="legal-content">
+      <article class="flex flex-col gap-5 pb-10">
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <p class="text-[14px] lg:text-base">
+            We are excited that you have chosen to explore the vibrant scene of top casino tournaments with us. PrestigeSlotArena.com is operated by Prestige Slot Arena, and by accessing our website,
+            you agree to adhere to the following terms and conditions, which are layed out to ensure that your visit is a hassle-free experience. Please read these terms in detail, as they govern your
+            use of our services.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">1. Scope of Service</h4>
+          <p class="text-[14px] lg:text-base">
+            PrestigeSlotArena.com serves as a stylish site dedicated to providing users with detailed information about exclusive casino tournaments in the industry. Our service includes displaying
+            the best events, facilitating bookings, and delivering exclusive insights to enhance your gambling experience. However, we do not directly manage the casino events or the tournaments they
+            offer. All event information showcased on our site is subject to change, and we do our best to keep this information reliable and up-to-date.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">2. User Responsibilities</h4>
+          <p class="text-[14px] lg:text-base">
+            By using our website, you agree to provide accurate information during the booking process. You are responsible for ensuring that the details of your booking are the right ones before
+            confirmation. Additionally, you acknowledge that any interaction with the casino, including checking in, using amenities, and resolving issues, is between you and the casino. Our role is
+            to be a facilitator and cannot be held responsible for the casino’s service or its event performance.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">3. Privacy and Data Protection</h4>
+          <p class="text-[14px] lg:text-base">
+            We take your data protection as our priority. All personal information collected during the booking process is safeguarded with advanced encryption technology. Your information is only
+            shared with the casino to facilitate your reservation and will not be disclosed to third parties without your permission. For more details, please see our Privacy Policy.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">4. Limitation of Liability</h4>
+          <p class="text-[14px] lg:text-base">
+            While we are dedicated to provide accurate information and present you with exceptional service, Prestige Slot Arena cannot be held liable for any issues arising from your event
+            experience, including service quality, amenities, or other issues. We are a platform for information and booking service, not the tournament organizer or the provider of casino services.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">5. Governing Law</h4>
+          <p class="text-[14px] lg:text-base">
+            These terms and conditions are governed by each country’s applicable laws which could differ upon each jurisdiction. Any disputes that may come from the use of our platform will be
+            resolved by each local court.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">6. Changes to Terms</h4>
+          <p class="text-[14px] lg:text-base">
+            We reserve the right to change these terms and conditions any time. Any updates will take effect immediately upon going live on this site. We encourage you to review the terms regularly to
+            keep up to date with any changes.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">7. User Account Security</h4>
+          <p class="text-[14px] lg:text-base">
+            As a website user, you are responsible for keeping the confidentiality of your account details, including your username and password. Any activity under your account is your
+            responsibility, and we advise you to contact us immediately if you suspect any unauthorized use of your account.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">8. Intellectual Property</h4>
+          <p class="text-[14px] lg:text-base">
+            All content provided on PrestigeSlotArena.com, including images, text and logos, is the intellectual property of Prestige Slot Arena. Unauthorized use, distribution or reproduction of this
+            content is strictly forbidden. We invite you to enjoy our content within the guidelines of fair use.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">9. Third-Party Links</h4>
+          <p class="text-[14px] lg:text-base">
+            Our website may contain links to external platforms for your convenience. These third-party sites are out of our control, and we are not responsible for their privacy practices, content or
+            any relations you may have with those. We recommend reviewing their terms and conditions before dealing with their services.
+          </p>
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+</Layout>

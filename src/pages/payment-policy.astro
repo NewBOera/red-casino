@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalsStructure from '../components/LegalsStructure.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import NavbarMobile from '../components/header/NavbarMobile.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <NavbarMobile isLanding={false} />
+
+  <NavbarDesktop isLanding={false} />
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <LegalsStructure idSection="legals">
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[400px] xl:h-[550px]">
+        <h2 class="font-bold font-Inter text-[24px]/[38px] text-wrap md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl xl:7xl">
+          Payment Policy
+        </h2>
+      </div>
+    </LegalsStructure>
+
+    <SectionStructure idSection="legal-content">
+      <article class="flex flex-col gap-5 pb-10">
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Booking Process</h4>
+          <p class="text-[14px] lg:text-base">
+            The booking process is streamlined for your convenience. You can secure your event access through our website, using several payment methods. Please note that payment is typically required
+            at the time of booking, and specific cancellation policies apply, as detailed in our Cancellation Policy.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Purchases and Payments</h4>
+          <p class="text-[14px] lg:text-base">
+            <strong>Prices:</strong> Prices may be subject to change without notice.<br />
+            <strong>Payments:</strong> One of our agents will contact you to provide a secure payment link. We accept Visa, Mastercard, and American Express, and the usual third-party payment platforms.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Fees and Charges</h4>
+          <p class="text-[14px] lg:text-base">
+            Prices listed on our website include all standard charges; however, some casinos could impose additional fees for certain services, such as parking, casino amenities, or local taxes. These
+            fees will be clearly outlined during the booking process.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Modifications and Cancellations</h4>
+          <p class="text-[14px] lg:text-base">
+            If you change your mind, you can modify your booking by contacting our customer support agents. Changes are subject to availability and any applicable casino event policies. For details on
+            cancellations, please refer to our Cancellation Policy.
+          </p>
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+</Layout>

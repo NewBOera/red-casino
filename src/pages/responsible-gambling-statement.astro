@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalsStructure from '../components/LegalsStructure.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import NavbarMobile from '../components/header/NavbarMobile.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <NavbarMobile isLanding={false} />
+
+  <NavbarDesktop isLanding={false} />
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <LegalsStructure idSection="legals">
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[400px] xl:h-[550px]">
+        <h2 class="font-bold font-Inter text-[24px]/[38px] text-wrap md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl xl:7xl">
+          Responsible Gambling Statement
+        </h2>
+      </div>
+    </LegalsStructure>
+
+    <SectionStructure idSection="legal-content">
+      <article class="flex flex-col gap-5 pb-10">
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <p class="text-[14px] lg:text-base">
+            Gambling can be an exciting part of your casino hotel experience, but it’s important to approach it with responsibility. At PrestigeSlotArena.com, we advocate for responsible gaming and
+            emphasize that gambling should only be allowed for those aged 18 and over. Don’t forget to set personal limits, stay within your budget, and ensure that gambling remains a fun and
+            enjoyable activity. If you ever feel that your gambling habits are becoming an issue, we urge you to seek professional help immediately. Online resources are available to provide
+            assistance and support.
+          </p>
+          <p class="text-[14px] lg:text-base">
+            We want you to enjoy your preferred casino event, but remember to keep your gaming enjoyable and within your financial means. Playing responsibly is key to a positive experience.
+          </p>
+
+          <a href="https://www.gambleaware.org/" target="_blank">Access more helpful information at: <span class="text-red underline">www.gambleaware.org/</span></a>
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+</Layout>

@@ -1,20 +1,24 @@
 ---
+interface Props {
+  isLanding?: boolean;
+}
 
+const { isLanding } = Astro.props;
 ---
 
 <header class="bg-red hidden lg:flex justify-around items-center gap-3 fixed top-0 w-full z-50">
   <div class="flex items-center gap-2">
-    <img class="h-8 w-8 object-cover" src="" alt="" />
+    <img class="h-8 w-8 object-cover" src="/public/assets/home/logo.png" alt="Prestige Slot Arena Logo" title="Prestige Slot Arena Logo" />
     <h3 class="text-white text-[20px]/[21px] md:text-[28px]/[29px] lg:text-[36px]/[39px] font-bold py-6 font-Archivo">Prestige Slot Arena</h3>
   </div>
 
   <nav>
     <ul class="text-white text-[20px]/[24px] xl:text-[24px]/[29px] flex gap-10">
-      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200">Home</li>
-      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200">About Us</li>
-      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200">F.A.Q.</li>
-      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200">Tournaments</li>
-      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200">How It Works</li>
+      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200"><a href={isLanding ? '#home-section' : './index.html#home-section'}>Home</a></li>
+      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200"><a href={isLanding ? '#about-us-section' : './index.html#about-us-section'}>About Us</a></li>
+      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200"><a href={isLanding ? '#faq-section' : './index.html#faq-section'}>F.A.Q.</a></li>
+      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200"><a href={isLanding ? '#tournaments-section' : './index.html#tournaments-section'}>Tournaments</a></li>
+      <li class="relative hover:text-[#BBBBBB] hover:cursor-pointer transition-all duration-200"><a href={isLanding ? '#how-section' : './index.html#how-section'}>How It Works</a></li>
     </ul>
   </nav>
 </header>

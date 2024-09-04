@@ -1,8 +1,26 @@
 ---
+interface Props {
+  isLanding?: boolean;
+}
 
+const { isLanding } = Astro.props;
 ---
 
 <header class="bg-red flex justify-center items-center gap-3 fixed top-0 w-full z-50">
-  <img class="h-8 w-8 object-cover" src="" alt="" />
+  <img class="h-8 w-8 object-cover" src="/public/assets/home/logo.png" alt="Prestige Slot Arena Logo" title="Prestige Slot Arena Logo" />
   <h3 class="text-white text-[20px]/[21px] md:text-[28px]/[29px] lg:text-[36px]/[39px] font-bold py-6 font-Archivo">Prestige Slot Arena</h3>
 </header>
+<nav id="side-menu" class="fixed z-50 top-0 left-0 w-64 h-full bg-gray-800 mt-16 md:mt-[74px] text-white transform -translate-x-full transition-transform duration-300 ease-in-out">
+  <button id="menu-toggle" onclick="toggleMenu()" class="bg-red p-3 rounded-lg fixed -right-12 z-50 lg:hidden">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+  </button>
+  <ul class="flex flex-col space-y-2 p-4" onclick="toggleMenu()">
+    <li><a href={isLanding ? '#home-section' : './index.html#home-section'} class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
+    <li><a href={isLanding ? '#about-us-section' : './index.html#about-us-section'} class="block py-2 px-4 hover:bg-gray-700">About Us</a></li>
+    <li><a href={isLanding ? '#faq-section' : './index.html#faq-section'} class="block py-2 px-4 hover:bg-gray-700">F.A.Q.</a></li>
+    <li><a href={isLanding ? '#tournaments-section' : './index.html#tournaments-section'} class="block py-2 px-4 hover:bg-gray-700">Tournaments</a></li>
+    <li><a href={isLanding ? '#how-section' : './index.html#how-section'} class="block py-2 px-4 hover:bg-gray-700">How It Works</a></li>
+  </ul>
+</nav>

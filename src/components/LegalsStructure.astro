@@ -1,4 +1,6 @@
 ---
+import HeroStructure from './HeroStructure.astro';
+
 interface Props {
   idSection: string;
   wrapperClasses?: string;
@@ -7,17 +9,17 @@ interface Props {
 const { idSection, wrapperClasses } = Astro.props;
 ---
 
-<section id={`${idSection}-section `} class="flex justify-center bg-hero bg-image">
+<div id={`${idSection}-section `} class="flex justify-center bg-hero bg-image">
   <div class={`sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px] flex flex-col px-3 sm:px-6 md:px-8 gap-8 sm:gap-16 md:gap-10 ${wrapperClasses}`}>
     <slot />
   </div>
-</section>
+</div>
 
 <style>
   .bg-image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
   }
 
   .bg-hero {

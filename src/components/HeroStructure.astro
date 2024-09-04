@@ -1,13 +1,14 @@
 ---
 interface Props {
   wrapperClasses?: string;
-  idSection: string;
+  sectionClasses?: string;
+  idSection?: string;
 }
 
-const { idSection, wrapperClasses } = Astro.props;
+const { idSection, wrapperClasses, sectionClasses } = Astro.props;
 ---
 
-<section id={`${idSection}-section`} class="flex justify-center hero-section bg-image bg-hero">
+<section id={`${idSection}-section`} class={`flex justify-center hero-section bg-image ${sectionClasses}`}>
   <div
     class={`sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px] flex flex-col py-40 lg:pt-[80px] xl:pt-[40px] w-full px-3 sm:px-6 md:px-8 gap-8 sm:gap-16 md:gap-10 ${wrapperClasses}`}
   >
@@ -40,5 +41,9 @@ const { idSection, wrapperClasses } = Astro.props;
 
   .bg-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/home/bg-hero.png');
+  }
+
+  .bg-legals {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/legals/bg.jpeg');
   }
 </style>

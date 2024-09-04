@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalsStructure from '../components/LegalsStructure.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import NavbarMobile from '../components/header/NavbarMobile.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <NavbarMobile isLanding={false} />
+
+  <NavbarDesktop isLanding={false} />
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <LegalsStructure idSection="legals">
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[400px] xl:h-[550px]">
+        <h2 class="font-bold font-Inter text-[24px]/[38px] text-wrap md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl xl:text-7xl">
+          Cookie Policy
+        </h2>
+      </div>
+    </LegalsStructure>
+
+    <SectionStructure idSection="legal-content">
+      <article class="flex flex-col gap-5 pb-10">
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <p class="text-[14px] lg:text-base">
+            At PrestigeSlotArena.com, we use cookies to improve your experience while browsing our website. Cookies are little data files stored on your device when you access our website, enabling us
+            to remember your settings, monitor site traffic, and customize your experience to suit your preferences. By continuing to explore our platform, you consent to the use of cookies as
+            outlined in our policy.
+          </p>
+          <h4 class="text-xl font-bold lg:text-xl">Cookie Types We Use:</h4>
+
+          <ul class="flex flex-col gap-2 list-inside list-disc">
+            <li>
+              <span class="font-bold">Essential Cookies:</span> These are fundamental to the basic functionality of our website. They allow you to browse the site efficiently, ensuring that secure areas
+              and key features are accessible.
+            </li>
+
+            <li>
+              <span class="font-bold">Performance Cookies:</span> These cookies gather insights about how you interact with our site, such as your most frequently visited pages. The information collected
+              helps us leverage the platform's functionality and your overall user experience.
+            </li>
+
+            <li>
+              <span class="font-bold">Functionality Cookies:</span> Designed to remember your settings—like language preferences or your geographical region—these cookies enable us to offer you a more
+              personalized and custom experience.
+            </li>
+            <li>
+              <span class="font-bold">Targeting Cookies:</span> These are used to display ads that are more aligned with your interests. They also assist in regulating the frequency of ad exposure and
+              measuring the effectiveness of our advertising campaigns.
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Additional Considerations for a Complete Cookie Policy:</h4>
+
+          <ul class="flex flex-col gap-2 list-inside list-disc">
+            <li>
+              <span class="font-bold">Third-Party Cookies:</span> Sometimes we collaborate with external service providers who may place cookies on your device to aid in functions such as analytics or
+              advertising. These cookies are subject to the privacy policies of the respective third parties, and we recommend checking their guidelines for further details.
+            </li>
+
+            <li>
+              <span class="font-bold">Cookie Duration:</span> Cookies on our website may work either session-based or consistently. Session cookies are temporary and are removed from your device when you
+              close down your browser, while consistent cookies remain until they either expire when you manually delete them. The duration of each cookie varies based on its purpose.
+            </li>
+
+            <li>
+              <span class="font-bold">Consent and Preferences:</span> On your first visit to our website, you’ll be prompted to accept or customize your cookie settings. You can change these preferences
+              at any time through your browser settings or by accessing the cookie management options on our site.
+            </li>
+            <li>
+              <span class="font-bold">Do Not Track Signals:</span> Some browsers offer a "Do Not Track" option that allows you to choose a preference not to be tracked across different websites. At PrestigeSlotArena.com
+              we honor these preferences and will not monitor your browsing activities if this feature is enabled.
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Managing Cookies:</h4>
+
+          <p class="text-[14px] lg:text-base">
+            You have control over how cookies are managed through your browser settings. Most browsers provide you the option to block cookies or alert you when one is being placed on your device.
+            However, notice that disabling cookies may impact the performance and functionality of certain parts of our website.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Policy Updates:</h4>
+
+          <p class="text-[14px] lg:text-base">
+            Our Cookie Policy may be changed from time to time to reflect any updates in our practices or to comply with new operational, regulatory or legal requirements. We encourage you to review
+            this policy regularly to stay informed about how we use cookies. Any changes will be posted on this page and will be effective immediately.
+          </p>
+          <p class="text-[14px] lg:text-base">
+            By using PrestigeSlotArena.com, you consent to our use of cookies in accordance with this policy. Should you have any questions or concerns regarding our Cookie Policy or how your data is
+            handled, please feel free to contact us to learn more.
+          </p>
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+</Layout>

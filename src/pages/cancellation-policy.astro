@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalsStructure from '../components/LegalsStructure.astro';
+import SectionStructure from '../components/SectionStructure.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import NavbarMobile from '../components/header/NavbarMobile.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <NavbarMobile isLanding={false} />
+
+  <NavbarDesktop isLanding={false} />
+  <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
+    <LegalsStructure idSection="legals">
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[400px] xl:h-[550px]">
+        <h2 class="font-bold font-Inter text-[24px]/[38px] text-wrap md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl xl:7xl">
+          Cancellation Policy
+        </h2>
+      </div>
+    </LegalsStructure>
+
+    <SectionStructure idSection="legal-content">
+      <article class="flex flex-col gap-5 pb-10">
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">Flexibility and Transparency</h4>
+          <p class="text-[14px] lg:text-base">We understand your plans may change, which is why our Cancellation Policy is designed to offer flexibility while ensuring transparency.</p>
+        </div>
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">1. Cancellation by the User</h4>
+          <p class="text-[14px] lg:text-base">
+            If you need to cancel your reservation, make sure to do so as soon as possible to avoid any potential fees. We encourage you abide to our refund policy in case that is what you need:
+            Cancellations requested over 30 days prior to the event will receive a full refund. Cancellations made between 14-30 days before the event will receive a 50% refund. Cancellations
+            requested less than 14 days prior to the event are non-refundable.
+            <br /><br />
+            Upon cancellation request, refunds will be processed within the next 7 to 10 business days. For more questions and concerns about our refund policy, please contact our customer service team
+            to assist you.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">2. Casino-Initiated Cancellations</h4>
+          <p class="text-[14px] lg:text-base">
+            In case the casino may need to cancel your booking due to uncertain circumstances. You will be notified as soon as possible, and we will assist you in finding an alternative event that
+            meets your needs. Any payments made will be fully refunded or transferred to the new event of your choice.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">3. Refund Process</h4>
+          <p class="text-[14px] lg:text-base">
+            Refunds are processed through the original payment method used at the time of booking. Please allow up to 10 business days for the reimbursement to reflect in your account. If you do not
+            get your refund within this time frame, please contact our customer support team for your prompt assistance.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">4. Non-Refundable Bookings</h4>
+          <p class="text-[14px] lg:text-base">
+            Certain events or tournaments might be non-refundable. If you book a non-refundable event, the terms will be clearly stated during the booking process, and no refunds will be issued in
+            case of cancellation.
+          </p>
+        </div>
+
+        <div class="text-white flex flex-col gap-2 font-Inter bg-main w-full">
+          <h4 class="text-xl font-bold lg:text-xl">5. Contact Us</h4>
+          <p class="text-[14px] lg:text-base">
+            For any questions or concerns regarding cancellations, please contact our customer support team. We are here to assist you and make sure that your experience with PrestigeSlotArena.com is
+            as effective as positive.
+          </p>
+        </div>
+      </article>
+    </SectionStructure>
+  </main>
+</Layout>

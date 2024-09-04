@@ -2,13 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import LegalsStructure from '../components/LegalsStructure.astro';
 import SectionStructure from '../components/SectionStructure.astro';
+import NavbarDesktop from '../components/header/NavbarDesktop.astro';
+import NavbarMobile from '../components/header/NavbarMobile.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+  <NavbarMobile isLanding={false} />
+
+  <NavbarDesktop isLanding={false} />
   <main class="flex flex-col gap-8 md:gap-10 lg:gap-12 xl:gap-16 bg-main">
     <LegalsStructure idSection="legals">
-      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[600px] xl:min-h-[800px]">
-        <h2 class="font-bold font-Inter text-[32px]/[38px] md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl">Terms & Conditions</h2>
+      <div class="flex justify-center items-center min-h-[400px] md:min-h-[550px] lg:min-h-[400px] xl:h-[550px]">
+        <h2 class="font-bold font-Inter text-[24px]/[38px] text-wrap md:text-[48px] text-center border text-white border-red w-max py-3 px-4 rounded-full self-center lg:text-6xl">
+          Terms & Conditions
+        </h2>
       </div>
     </LegalsStructure>
 
