@@ -126,21 +126,27 @@ import NavbarMobile from '../components/header/NavbarMobile.astro';
         <!-- Swiper -->
         <div id="casino-swiper" class="swiper w-full">
           <div class="swiper-wrapper w-max">
-            <CardComponent />
+            <CardComponent>
+              <button onclick="bookEvent('Deep Stack Poker Tournament')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/2.jpeg"
               altText="High Hand Image"
               title="High Hand"
               dateRange="Jul 1, 2024 - Dec 31, 2024"
               description="Join the High Hand Poker Tournament with a $13,000 guaranteed prize pool! Play on Tuesdays and Wednesdays from 4-6 PM and 10 PM-12 AM, or on Thursdays and Saturdays from 12 PM-12 AM. The buy-in is $120, with $100 going to the prize pool. Start with 10,000 chips and aim for the win!"
-            />
+            >
+              <button onclick="bookEvent('High Hand')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/3.png"
               altText="Poker Suited Splash Pots"
               title="Poker Suited Splash Pots"
               dateRange="Sundays from Sept 8, 2024 - Dec 29, 2024"
               description="Play Poker Suited Splash Pots every Sunday at 5pm! With an increasing prize pool every break level and race off.  First two levels are 30 minutes. 3th - 5th levels are 20 minutes. 6th level and on are 15 minutes each.  All bets must be no less than the big blind.  The buy-in is $60 that includes satellite, entry and gratuity fees. Players receive 7,500 in tournament chips to start."
-            />
+            >
+              <button onclick="bookEvent('Poker Suited Splash Pots')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/4.png"
               altText="$1,500 Added Blackjack Tournament"
@@ -148,29 +154,37 @@ import NavbarMobile from '../components/header/NavbarMobile.astro';
               dateRange="Sept 9, 2024 - March 11, 2025"
               eventDetails="Second Tuesday of each month"
               description="Get into the $1,500 Added Blackjack Tournament action with this $30 buy-in tourney. Sign-up begins at 4pm with qualifying rounds at 5, 6, and 7pm, and finals at 9pm. Sharpen your skills before the tournament with $2 blackjack any day when playing the bonus bet!"
-            />
+            >
+              <button onclick="bookEvent('$1,500 Added Blackjack Tournament')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/5.png"
               altText="$15,000 Wise Guys Slot Tournament"
               title="$15,000 Wise Guys Slot Tournament"
               dateRange="Sept 23 - 25, 2024"
               description="Join to play anytime between 10am to 12:30pm, Monday - Wednesday.  Make sure to register between 9am to noon from Monday to Wednesday.  A $50 entry fee gets you in 1, 2, or all 3 days of the tournament play.  There are $5,000 in prizes each day!"
-            />
+            >
+              <button onclick="bookEvent('$15,000 Wise Guys Slot Tournament')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/6.png"
-              altText="Puck Drop Payout $5K Slot Tournament "
-              title="Puck Drop Payout $5K Slot Tournament "
+              altText="Puck Drop Payout $5K Slot Tournament"
+              title="Puck Drop Payout $5K Slot Tournament"
               dateRange="Oct 7 - 9, 2024"
               description="Join the Puck Drop Payout Tournament with a guaranteed $5,000 prize pool. Free for all invited guests. $50 entry for all other guests. Prizes will be awarded in cash or Free Slot Play. Must attend registration in order to participate.  Registration on Oct 7, 2pm - 4pm.  And late registration on Oct 8, 8am - 9:45am.  First place gets $2,000."
-            />
+            >
+              <button onclick="bookEvent('Puck Drop Payout $5K Slot Tournament')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
 
             <CardComponent
               imageSrc="/public/assets/tournaments/7.png"
-              altText="No-Limit Texas Hold’em  "
-              title="No-Limit Texas Hold’em  "
+              altText="No-Limit Texas Hold’em"
+              title="No-Limit Texas Hold’em"
               dateRange="Sept 11, 2024 - Dec 25, 2024"
               description="Join the No-Limit Texas Hold’em every Wednesday at 6:30pm! With an increasing prize pool every break level and race off.  First two levels are 30 minutes.  3th - 5th levels are 20 minutes. 6th level and on are 15 minutes each.  All bets must be no less than the big blind.  The buy-in is $80 which includes satellite, entry and gratuity fees. Players receive $7,500 in tournament chips to kick off."
-            />
+            >
+              <button onclick="bookEvent('No-Limit Texas Hold’em')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/8.png"
               altText="Pigskin Giveaway"
@@ -178,21 +192,27 @@ import NavbarMobile from '../components/header/NavbarMobile.astro';
               dateRange="Aug 12, 2024 - Feb 24, 2024"
               eventDetails="During select football games and Monday nights"
               description="Join during select professional and college football games throughout the week.  Splashpots will be awarded anytime a team scores.  Touchdown = $75 splashpot.  Field goal = $50 splashpot.  Safety = $100 splashpot."
-            />
+            >
+              <button onclick="bookEvent('Pigskin Giveaway')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/9.png"
               altText="Super Satellite Texas Hold’em"
               title="Super Satellite Texas Hold’em"
               dateRange="Sept 12, 2024 - Dec 28, 2024"
               description="Challenge your luck at the Super Satellite Texas Hold’em every Thursday at 6:30pm! With an increasing prize pool every break level and race off.  First two levels are 30 minutes.  3th - 5th levels are 20 minutes. 6th level and on are 15 minutes each.  All bets must be no less than the big blind.  The buy-in is $100 which includes satellite, entry and gratuity fees. Players receive $10,000 in tournament chips to start with."
-            />
+            >
+              <button onclick="bookEvent('Super Satellite Texas Hold’em')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
             <CardComponent
               imageSrc="/public/assets/tournaments/10.png"
               altText="Friday Night Frenzy"
               title="Friday Night Frenzy"
               dateRange="Every Friday 11am - 2am"
               description="Join for drawings every hour from 11am to 2am on Fridays. Poker players get drawing tickets throughout the week for winning with High Hands. Hold’em players receive a ticket for winning with a flush or better. Omaha, 7 Card Stud, Pineapple and Crazy Pineapple get a ticket for winning with a full house or better. Big O players get a ticket for winning with 8’s full or better."
-            />
+            >
+              <button onclick="bookEvent('Friday Night Frenzy')" class="border button-gradient w-[200px] rounded-[20px] border-white font-bold p-3">Get tickets now!</button>
+            </CardComponent>
           </div>
         </div>
       </article>
